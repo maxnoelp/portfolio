@@ -1,0 +1,24 @@
+*,
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.margin {
+  margin-top: 8rem;
+}
+
+.outlines {
+  outline: 2px solid gray;
+}
+
+.picture {
+  height: 75px;
+  width: 75px;
+}
