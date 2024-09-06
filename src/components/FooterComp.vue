@@ -12,9 +12,9 @@
             alt="Image für LinkedIn"
         /></a>
       </div>
-      <div class="col d-flex gap-5 justify-content-center fs-4">
+      <div class="col d-flex flex-column gap-5 justify-content-center fs-4">
         <p class="text-decoration-underline hover-pointer" @click="showPopUp()">Impressum</p>
-        <div v-if="!showPop" class="popup">
+        <div v-if="showPop" class="popup">
           <p>Nölp Max</p>
           <p>Kapellenberg, 16</p>
           <p>97437 Haßfurt</p>
