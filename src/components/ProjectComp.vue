@@ -1,13 +1,19 @@
 <template>
   <div class="container">
-    <h2 class="text-center mb-4 fs-1">Projects</h2>
+    <div class="d-flex justify-content-center mb-4">
+      <h2 class="text-center mb-4 fs-1 outline-head">Projects</h2>
+    </div>
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col text-center">
         <div class="card h-100">
           <div class="card-body">
             <h3 class="card-title">
-              <a href="https://maxnoelp.github.io/web-notes-app/">Web Notes App</a>
+              <a class="link-head" href="https://maxnoelp.github.io/web-notes-app/"
+                >Web Notes App</a
+              >
             </h3>
+            <div class="d-flex justify-content-center"><p class="code-tag">JavaScript</p></div>
+
             <p class="card-text">
               A small but nice note app where notes can be saved and retrieved. Click on 'New Note'
               to create a new note, and you can create as many as you like. To delete the notes
@@ -30,8 +36,9 @@
         <div class="card h-100">
           <div class="card-body">
             <h3 class="card-title">
-              <a href="https://github.com/maxnoelp/calculator">Calculator</a>
+              <a class="link-head" href="https://github.com/maxnoelp/calculator">Calculator</a>
             </h3>
+            <div class="d-flex justify-content-center"><p class="code-tag">JavaScript</p></div>
             <p class="card-text">
               Here we have a standard pocket calculator with the normal functions of a standard
               pocket calculator. The speciality here is that it is written with Vue.js and you can
@@ -53,8 +60,11 @@
         <div class="card h-100">
           <div class="card-body">
             <h3 class="card-title">
-              <a href="https://maxnoelp.github.io/music-player-w-vue/">Music Player</a>
+              <a class="link-head" href="https://maxnoelp.github.io/music-player-w-vue/"
+                >Music Player</a
+              >
             </h3>
+            <div class="d-flex justify-content-center"><p class="code-tag">Vue.js</p></div>
             <p class="card-text">
               Here we have a music player that I programmed with Vue. You can do everything that a
               normal music player can do. It was a good exercise for me to learn something new, how
@@ -80,8 +90,9 @@
         <div class="card h-100">
           <div class="card-body">
             <h3 class="card-title">
-              <a href="https://github.com/maxnoelp/todo-app">Todo App with API</a>
+              <a class="link-head" href="https://github.com/maxnoelp/todo-app">Todo App with API</a>
             </h3>
+            <div class="d-flex justify-content-center"><p class="code-tag">JavaScript</p></div>
             <p class="card-text">
               Here we have a simple todo app with a connection to a local API. The functions can be
               viewed in the app, filters to show or hide certain todos. There is also a button with
@@ -101,8 +112,9 @@
         <div class="card h-100">
           <div class="card-body">
             <h3 class="card-title">
-              <a href="https://github.com/maxnoelp/threadhub">ThreadHub</a>
+              <a class="link-head" href="https://github.com/maxnoelp/threadhub">ThreadHub</a>
             </h3>
+            <div class="d-flex justify-content-center"><p class="code-tag">Vue.js</p></div>
             <p class="card-text">
               This project was our final project in the boot camp. We worked with a local api. There
               is a login that checks if the user is registered, if the data is entered correctly and
@@ -114,8 +126,16 @@
             </p>
           </div>
           <div class="d-flex gap-3 justify-content-center mb-4">
-            <img class="img-fluid calc-pic" src="../images/threadhub-1" alt="Screenshot von App" />
-            <img class="img-fluid calc-pic" src="../images/threadhub-1" alt="Screenshot von App" />
+            <img
+              class="img-fluid calc-pic"
+              src="../images/threadhub-1.png"
+              alt="Screenshot von App"
+            />
+            <img
+              class="img-fluid calc-pic"
+              src="../images/threadhub-2.png"
+              alt="Screenshot von App"
+            />
           </div>
         </div>
       </div>

@@ -18,4 +18,10 @@ export default {
 .text-font {
   font-size: 4rem;
 }
+
+@media (min-width: 1200px) {
+  .text-font {
+    font-size: 8rem;
+  }
+}
 </style>

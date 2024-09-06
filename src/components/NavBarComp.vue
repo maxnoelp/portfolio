@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar bg-body-tertiary fixed-top">
+  <nav class="navbar bg-secondary fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#" v-text="text"></a>
 

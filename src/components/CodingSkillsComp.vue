@@ -1,6 +1,8 @@
 <template>
   <div class="margin container-sm">
-    <h2 class="text-center fs-1 mb-4">Coding Skills</h2>
+    <div class="d-flex justify-content-center mb-4">
+      <h2 class="text-center fs-1 mb-4 outline-head">Coding Skills</h2>
+    </div>
     <div class="row row-cols-2 text-center align-items-center justify-content-center">
       <div class="mb-3">
         <img class="picture hover-image" src="../images/html.png" alt="html" />

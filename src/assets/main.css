@@ -8,6 +8,7 @@
 body {
   height: 100vh;
   background-color: lightgray;
+  margin: 0;
 }
 
 .margin {
@@ -21,4 +22,49 @@ body {
 .picture {
   height: 75px;
   width: 75px;
+}
+
+.code-tag {
+  display: flex;
+  justify-content: center;
+  padding: 0rem 0.5rem;
+
+  background: gray;
+  color: white;
+  font-size: 0.75rem;
+
+  border-radius: 10px;
+}
+
+.link-head {
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.link-head:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.outline-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 4rem;
+  border-radius: 60px 0px 60px 0px;
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 380px) {
+  .outline-head {
+    width: 350px;
+  }
 }
