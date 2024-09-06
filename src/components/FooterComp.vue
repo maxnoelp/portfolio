@@ -16,7 +16,7 @@
         <p class="text-decoration-underline hover-pointer" @click="showPopUp()">Impressum</p>
         <div v-if="!showPop" class="popup">
           <p>Nölp Max</p>
-          <p>Kapellenberg 16</p>
+          <p>Kapellenberg, 16</p>
           <p>97437 Haßfurt</p>
         </div>
       </div>
