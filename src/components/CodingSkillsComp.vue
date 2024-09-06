@@ -29,7 +29,7 @@
         <p>Responsive Webdesign</p>
       </div>
       <div class="mb-3">
-        <img class="picture hover-image" src="../images/Bootstrap.png" alt="" />
+        <img class="picture hover-image" src="../images/bootstrap.png" alt="" />
         <p>Bootstrap</p>
       </div>
       <div class="mb-3">
