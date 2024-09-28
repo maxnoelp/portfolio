@@ -3,25 +3,26 @@
     <div class="d-flex justify-content-center mb-4">
       <h2 class="text-center fs-1 mb-4 outline-head">Coding Skills</h2>
     </div>
-    <div class="row row-cols-2 text-center align-items-center justify-content-center">
+    <div class="row row-cols-3 text-center align-items-center justify-content-center">
       <div class="mb-3">
-        <img class="picture hover-image" src="../images/html.png" alt="html" />
+        <img class="picture hover-image" src="https://skillicons.dev/icons?i=html" alt="html" />
+        <!--../images/html.png-->
         <p>HTML</p>
       </div>
       <div class="mb-3">
-        <img class="picture hover-image" src="../images/css.png" alt="" />
+        <img class="picture hover-image" src="https://skillicons.dev/icons?i=css" alt="" />
         <p>CSS</p>
       </div>
       <div class="mb-3">
-        <img class="picture hover-image" src="../images/JavaScript.png" alt="" />
+        <img class="picture hover-image" src="https://skillicons.dev/icons?i=javascript" alt="" />
         <p>JavaScript</p>
       </div>
       <div class="mb-3">
-        <img class="picture hover-image" src="../images/vue.png" alt="" />
+        <img class="picture hover-image" src="https://skillicons.dev/icons?i=vuejs" alt="" />
         <p>Vue.js</p>
       </div>
       <div class="mb-3">
-        <img class="picture hover-image" src="../images/node.png" alt="" />
+        <img class="picture hover-image" src="https://skillicons.dev/icons?i=nodejs" alt="" />
         <p>Node.js</p>
       </div>
       <div class="mb-3">
@@ -29,12 +30,16 @@
         <p>Responsive Webdesign</p>
       </div>
       <div class="mb-3">
-        <img class="picture hover-image" src="../images/bootstrap.png" alt="" />
+        <img class="picture hover-image" src="https://skillicons.dev/icons?i=bootstrap" alt="" />
         <p>Bootstrap</p>
       </div>
       <div class="mb-3">
-        <img class="picture hover-image" src="../images/python.png" alt="" />
-        <p>Python (in learning)</p>
+        <img class="picture hover-image" src="https://skillicons.dev/icons?i=python" alt="" />
+        <p>Python</p>
+      </div>
+      <div class="mb-3">
+        <img class="picture hover-image" src="https://skillicons.dev/icons?i=django" alt="" />
+        <p>Django</p>
       </div>
       <div class="mb-3">
         <img class="picture-length hover-image" src="../images/Cypress.png" alt="" />
@@ -45,7 +50,7 @@
         <p>Rest Api</p>
       </div>
       <div>
-        <img class="picture hover-image" src="../images/postman-icon-svgrepo-com (1).png" alt="" />
+        <img class="picture hover-image" src="https://skillicons.dev/icons?i=postman" alt="" />
         <p>Postman</p>
       </div>
     </div>
