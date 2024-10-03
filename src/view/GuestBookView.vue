@@ -1,5 +1,24 @@
 <template>
   <div><NavBarComp /></div>
+  <div class="blur-con" v-if="deleteField == true">
+    <div class="showpop">
+      <div>
+        <p class="text-center">Do you want to delete?</p>
+      </div>
+      <div class="d-flex justifycontent-between gap-5">
+        <button
+          type="button"
+          class="btn btn-outline-danger fs-5"
+          @click="deleteBook(this.selectedBook)"
+        >
+          Delete
+        </button>
+        <button type="button" class="btn btn-outline-success fs-5" @click="clickDelete">
+          No Delete
+        </button>
+      </div>
+    </div>
+  </div>
   <div class="margin">
     <div class="ms-5" v-if="!showForm">
       <button type="button" class="btn btn-secondary" @click="showBool">Secondary</button>
@@ -61,6 +80,15 @@
         <div class="col-4 mb-3">
           <div class="card" style="width: 18rem">
             <div class="card-body">
+              <div class="d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn-close mb-3"
+                  aria-label="Close"
+                  :data-id="book.id"
+                  @click="clickDelete(book.id)"
+                ></button>
+              </div>
               <div class="d-flex align-items-center justify-content-between">
                 <h3 class="card-title text-decoration-underline">{{ book.name }}</h3>
                 <p class="card-date bg-secondary code-tag" style="font-size: 0.75rem">
@@ -93,10 +121,13 @@ export default {
         link: '',
       },
       showForm: false,
-      errMessage: 'Error, API doesn´t answer',
+      errMessage: 'All fields must be are filled',
       okMessage: 'Great, thanks for your comment <3',
       showOk: false,
       showErr: false,
+      deleteField: false,
+      fieldblow: 'login',
+      selectedBook: null,
     };
   },
   methods: {
@@ -124,24 +155,53 @@ export default {
         }
       });
     },
-    refreshPage() {
-      window.location.reload();
+    clickDelete(bookId) {
+      this.selectedBook = bookId;
+      this.deleteField = !this.deleteField;
+      console.log(this.selectedBook);
     },
-    resetForm() {
-      this.newBook = {
-        name: '',
-        text: '',
-        date: '',
-        link: '',
-      };
+    deleteBook(bookId) {
+      fetch(`${import.meta.env.VITE_API_URL}${bookId}/`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            console.log('Buch erfolgreich gelöscht.');
+            // Option 1: Seite neu laden
+            location.reload();
+            this.selectedBook = null;
+            // Option 2: Daten im Frontend aktualisieren (z.B. mit Vuex oder einer Methode, um die Buchliste neu zu laden)
+            // this.loadBooks(); // Beispiel für das erneute Laden der Buchdaten
+          } else {
+            console.error('Fehler beim Löschen des Buchs:', response.statusText);
+          }
+        })
+        .catch((error) => {
+          console.error('Fehler:', error);
+        });
     },
+  },
+
+  refreshPage() {
+    window.location.reload();
+  },
+  resetForm() {
+    this.newBook = {
+      name: '',
+      text: '',
+      date: '',
+      link: '',
+    };
   },
   async created() {
     const response = await fetch(this.apiUrl);
     const data = await response.json();
     console.log(data);
     this.books = await data;
-    console.log(this.books);
+    console.log(this.books.id);
   },
 };
 </script>
