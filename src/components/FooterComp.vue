@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid mt-5 p-3 bg-secondary">
+  <div class="container-fluid mt-5 p-1 bg-secondary">
     <div class="row row-cols-2">
-      <div class="col d-flex gap-3 justify-content-center">
+      <div class="col d-flex gap-3 justify-content-center align-items-center">
         <a href="https://github.com/maxnoelp"
           ><img class="picture-1" src="../images/git.png" alt="Image für Github"
         /></a>
@@ -12,7 +12,7 @@
             alt="Image für LinkedIn"
         /></a>
       </div>
-      <div class="col d-flex flex-column gap-5 justify-content-center fs-4">
+      <div class="col d-flex flex-column gap-5 justify-content-center fs-4 align-items-center pt-1">
         <p class="text-decoration-underline hover-pointer" @click="showPopUp()">Impressum</p>
         <div v-if="showPop" class="popup">
           <p>Nölp Max</p>
@@ -43,7 +43,7 @@ export default {
 }
 
 .picture-1 {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 }
 </style>
