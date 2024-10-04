@@ -137,7 +137,7 @@ export default {
   components: { NavBarComp, FooterComp },
   data() {
     return {
-      apiUrl: import.meta.env.VITE_API_URL,
+      apiUrl: "https://guestbook-api-django.onrender.com/api/guestbook/",
       books: [],
       newBook: {
         name: '',
@@ -156,6 +156,7 @@ export default {
       passphrase: 'portfolio',
       input: '',
       showPassInput: false,
+    
     };
   },
   methods: {
@@ -165,7 +166,7 @@ export default {
      saveBook() {
       //   localStorage.setItem('bookData', JSON.stringify(this.newBook));
       //   this.showForm = !this.showForm;
-      fetch(import.meta.env.VITE_API_URL, {
+      fetch(this.apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -203,7 +204,7 @@ export default {
       }
     },
     deleteBook(bookId) {
-     fetch(`${import.meta.env.VITE_API_URL}${bookId}/`, {
+     fetch(`${this.apiUrl}${bookId}/`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
