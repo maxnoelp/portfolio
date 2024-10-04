@@ -137,7 +137,7 @@ export default {
   components: { NavBarComp, FooterComp },
   data() {
     return {
-      apiUrl: "https://guestbook-api-django.onrender.com/api/guestbook/",
+      apiUrl: 'https://guestbook-api-django.onrender.com/api/guestbook//',
       books: [],
       newBook: {
         name: '',
@@ -156,14 +156,13 @@ export default {
       passphrase: 'portfolio',
       input: '',
       showPassInput: false,
-    
     };
   },
   methods: {
     showBool() {
       this.showForm = !this.showForm;
     },
-     saveBook() {
+    saveBook() {
       //   localStorage.setItem('bookData', JSON.stringify(this.newBook));
       //   this.showForm = !this.showForm;
       fetch(this.apiUrl, {
@@ -204,7 +203,7 @@ export default {
       }
     },
     deleteBook(bookId) {
-     fetch(`${this.apiUrl}${bookId}/`, {
+      fetch(`${this.apiUrl}${bookId}/`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
