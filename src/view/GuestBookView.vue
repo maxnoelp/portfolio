@@ -162,10 +162,10 @@ export default {
     showBool() {
       this.showForm = !this.showForm;
     },
-     async saveBook() {
+     saveBook() {
       //   localStorage.setItem('bookData', JSON.stringify(this.newBook));
       //   this.showForm = !this.showForm;
-      await fetch(import.meta.env.VITE_API_URL, {
+      fetch(import.meta.env.VITE_API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -202,8 +202,8 @@ export default {
         console.error('Falsche Passwort');
       }
     },
-    async deleteBook(bookId) {
-      await fetch(`${import.meta.env.VITE_API_URL}${bookId}/`, {
+    deleteBook(bookId) {
+     fetch(`${import.meta.env.VITE_API_URL}${bookId}/`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
