@@ -23,7 +23,7 @@ export default {
     <ProjectComp />
   </main>
 
-  <footer class="container-fluid m-0 p-0"><FooterComp /></footer>
+  <footer class=""><FooterComp /></footer>
 </template>
 
 <style scoped></style>

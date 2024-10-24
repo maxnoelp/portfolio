@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid mt-5 p-1 bg-secondary">
+  <div class="container-fluid mt-5 bg-secondary">
     <div class="row row-cols-2">
       <div class="col d-flex gap-3 justify-content-center align-items-center">
         <a href="https://github.com/maxnoelp"
