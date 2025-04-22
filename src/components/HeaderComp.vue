@@ -1,8 +1,13 @@
 <template>
-  <div class="container text-center margin">
-    <h1 class="fw-semibold text-font" id="home">Frontend Web<br />Developer</h1>
-    <h2 v-text="text" class="mt-4"></h2>
-  </div>
+  <section id="hero" class="hero section dark-background">
+
+<div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+  <h2>Hi, I'm Max!</h2>
+  <p class="text-light">I am a Fullstack Web Developer living in Germany.<br></p>
+  <a href="#about" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a>
+</div>
+
+</section>
 </template>
 
 <script>

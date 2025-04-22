@@ -1,43 +1,52 @@
 <template>
-  <div class="margin container-xl container-xl-gap">
-    <div>
-      <img src="../images/me.jpg" class="rounded d-block float-end me-1" alt="" />
+<section id="about" class="about section">
+
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>About</h2>
+  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+</div><!-- End Section Title -->
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+  <div class="row gy-4 justify-content-center">
+    <div class="col-lg-4">
+      <img src="../images/me.jpg" class="img-fluid" alt="">
     </div>
-    <div class="content-text">
-      <div class="text p-2 outlines">
-        Hello, my name is Max. I am 29 years young and come from Haßfurt, Bavaria. I am a frontend
-        web developer. My strengths are ambition, curiosity, and motivation. I love designing and
-        solving difficult tasks. This new stage in my life is a dream come true for me. I want to
-        constantly develop and discover new things. In addition to my professional skills, I am
-        passionate about creating user-friendly and visually appealing interfaces that provide
-        seamless experiences. I thrive in collaborative environments where creativity and innovation
-        are encouraged. Outside of work, I enjoy exploring new technologies, staying updated with
+    <div class="col-lg-8 content">
+      <h2>Fullstack Web Developer</h2>
+      <p class="fst-italic py-3">
+        My strengths are ambition, curiosity, and motivation. I love designing and
+        solving difficult tasks.
+      </p>
+      <div class="row">
+        <div class="col-lg-6">
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>24 July 1994</span></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.prinz-code.com</span></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Haßfurt, Germany</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>noelpmax@gmail.com</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="py-3">
+        Outside of work, I enjoy exploring new technologies, staying updated with
         industry trends, and working on personal projects that challenge my skills. I am always
         eager to learn and grow, both professionally and personally, and I look forward to the
         exciting opportunities that lie ahead.
-      </div>
+      </p>
     </div>
   </div>
+
+</div>
+
+</section>
 </template>
 <script>
 export default {};
 </script>
-<style scoped>
-img {
-  width: 150px;
-  height: 150px;
-  transform: rotate(12.5deg);
-  margin-bottom: -1rem;
-  box-shadow: 0px 0px 8px 1px black;
-}
-
-.container-xl-gap {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.text {
-  font-size: 1.5rem;
-}
-</style>
