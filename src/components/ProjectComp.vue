@@ -34,10 +34,10 @@ onMounted(async () => {
   </div>
 
   <div v-else class="container">
-    <div v-for="title in titles" :key="title.id" class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card max-c-width">
-          <img v-if="title.images.length" :src="title.images[0].file" alt="Erstes Bild" class="card-img-top" />
+    <div class="row">
+      <div v-for="title in titles" :key="title.id" class="col-12 col-md-6 col-lg-4 mx-auto">
+        <div class="h-100 card max-c-width mb-3">
+          <img v-if="title.images.length" :src="title.images[0].file" alt="Erstes Bild" class="card-img-top max-c-height" />
           <div class="card-body">
             <h5 class="card-title">{{ title.title }}</h5>
             <p class="card-text" v-html="title.teaser"></p>
@@ -59,5 +59,9 @@ onMounted(async () => {
 <style scoped>
 .max-c-width {
   max-width: 350px;
+}
+.max-c-height {
+  max-height: 250px;
+  object-fit: contain;
 }
 </style>
