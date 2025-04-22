@@ -1,5 +1,4 @@
 <script setup>
-import javascriptLogo from '../images/javascript.png';
 </script>
 <template>
   <section id="skills" class="skills section">
@@ -58,7 +57,7 @@ import javascriptLogo from '../images/javascript.png';
         <div class="col-xl-6 col-lg-6">
             <div class="card l-bg-yellow-dark">
                 <div class="card-statistic-3 p-4">
-                    <div class="card-icon card-icon-large"><img :src="javascriptLogo" alt=""></div>
+                    <div class="card-icon card-icon-large"><img src="../images/JavaScript.png" alt=""></div>
                     <div class="row align-items-center mb-2 d-flex">
                         <div class="col-8">
                             <h2 class="d-flex align-items-center mb-0 text-white">
