@@ -3,7 +3,6 @@
   <section id="skills" class="skills section">
     <div class="container section-title" data-aos="fade-up">
       <h2>Skills</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
     </div>
 
     <div class="container">
@@ -91,6 +90,27 @@
                     </div>
                     <div class="progress mt-1 " data-height="8" style="height: 8px;">
                         <div class="progress-bar l-bg-green" role="progressbar" data-width="85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--vue.js-->
+        <div class="col-xl-6 col-lg-6">
+            <div class="card l-bg-green-dark">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><img src="../images/vue.png" alt=""></div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        <div class="col-8">
+                            <h2 class="d-flex align-items-center mb-0 text-white">
+                                Vue.js
+                            </h2>
+                        </div>
+                        <div class="col-4 text-right">
+                            <span>70% <i class="bi bi-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                        <div class="progress-bar l-bg-green" role="progressbar" data-width="70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
                     </div>
                 </div>
             </div>
@@ -210,36 +230,36 @@
                 </div>
             </div>
         </div>
-        <!--PSQL-->
+        <!--docker-->
         <div class="col-xl-6 col-lg-6">
-            <div class="card l-bg-orange-dark">
+            <div class="card l-bg-docker-dark">
                 <div class="card-statistic-3 p-4">
-                    <div class="card-icon card-icon-large"><img src="../images/postgres-i.png" alt=""></div>
+                    <div class="card-icon card-icon-large"><img src="../images/docker.png" alt=""></div>
                     <div class="row align-items-center mb-2 d-flex">
                         <div class="col-8">
                             <h2 class="d-flex align-items-center mb-0 text-white">
-                                PostgreSQL
+                                Docker
                             </h2>
                         </div>
                         <div class="col-4 text-right">
-                            <span>80% <i class="bi bi-arrow-up"></i></span>
+                            <span>60% <i class="bi bi-arrow-up"></i></span>
                         </div>
                     </div>
                     <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                        <div class="progress-bar l-bg-green" role="progressbar" data-width="80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                        <div class="progress-bar l-bg-green" role="progressbar" data-width="60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Python-->
+        <!--Jira-->
         <div class="col-xl-6 col-lg-6">
             <div class="card l-bg-blue-dark">
                 <div class="card-statistic-3 p-4">
-                    <div class="card-icon card-icon-large"><img src="../images/icons8-python-64.png" alt=""></div>
+                    <div class="card-icon card-icon-large"></div>
                     <div class="row align-items-center mb-2 d-flex">
                         <div class="col-8">
                             <h2 class="d-flex align-items-center mb-0 text-white">
-                                Python
+                                Jira
                             </h2>
                         </div>
                         <div class="col-4 text-right">
@@ -252,15 +272,15 @@
                 </div>
             </div>
         </div>
-        <!--DJ-->
+        <!--Diversion-->
         <div class="col-xl-6 col-lg-6">
             <div class="card l-bg-green-dark">
                 <div class="card-statistic-3 p-4">
-                    <div class="card-icon card-icon-large"><img src="../images/dj-64.png" alt=""></div>
+                    <div class="card-icon card-icon-large"><img src="../images/diversion.png" alt="" class="me-2" height="48px"></div>
                     <div class="row align-items-center mb-2 d-flex">
                         <div class="col-8">
                             <h2 class="d-flex align-items-center mb-0 text-white">
-                                Django
+                                Diversion
                             </h2>
                         </div>
                         <div class="col-4 text-right">
@@ -332,6 +352,11 @@
     color: #fff;
 }
 
+.l-bg-docker-dark {
+    background: linear-gradient(to right, #155a91, #2496ED) !important;
+    color: #fff;
+}
+
 .l-bg-blue-dark {
     background: linear-gradient(to right, #373b44, #4286f4) !important;
     color: #fff;
@@ -372,7 +397,7 @@
     position: absolute;
     right: 0px;
     top: 20px;
-    opacity: 0.25;
+    opacity: 0.1;
 }
 
 .l-bg-cyan {
