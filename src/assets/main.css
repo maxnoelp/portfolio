@@ -1309,9 +1309,16 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+.custom-btn {
+  color: #fff !important;
+  font-weight: bold;
+  background-color: var(--accent-color);
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+.custom-btn:hover {
+  color: var(--accent-color) !important;
+  background-color: black;
 }

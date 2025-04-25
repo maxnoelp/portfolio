@@ -35,14 +35,15 @@ onMounted(async () => {
 
   <div v-else class="container">
     <div class="row">
-      <div v-for="title in titles" :key="title.id" class="col-12 col-md-6 col-lg-4 mx-auto">
-        <div class="h-100 card max-c-width mb-3">
+      <div v-for="title in titles" :key="title.id" class="col-12 col-md-4 col-lg-4 mb-3">
+        <div class="h-100 w-100 card max-c-width mb-3">
           <img v-if="title.images.length" :src="title.images[0].file" alt="Erstes Bild" class="card-img-top max-c-height" />
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">{{ title.title }}</h5>
+            <div><span class="badge text-bg-dark">{{ title.coding_language }}</span></div>
             <p class="card-text" v-html="title.teaser"></p>
             <router-link
-              class="btn btn-outline-dark mt-2"
+              class="custom-btn mt-auto text-center"
               :to="{ name: 'ProjectDetail', params: { id: title.id } }"
             >
   Mehr erfahren
@@ -58,10 +59,24 @@ onMounted(async () => {
 
 <style scoped>
 .max-c-width {
-  max-width: 350px;
+  max-width: 325px;
 }
 .max-c-height {
-  max-height: 250px;
+  max-height: 195px;
   object-fit: contain;
+}
+
+h5 {
+  text-decoration: underline var(--accent-color);
+
+}
+
+.card {
+  border-color: var(--accent-color) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 </style>
